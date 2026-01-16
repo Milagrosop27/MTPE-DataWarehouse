@@ -1,0 +1,189 @@
+# Data Warehouse MTPE - .gitignore
+
+# =============================================================================
+# CREDENCIALES Y DATOS SENSIBLES
+# =============================================================================
+.env
+*.env
+.env.*
+config/.env
+2_ETL_INTEGRATION/config/.env
+*.key
+*.pem
+*.pfx
+
+# =============================================================================
+# DATOS (archivos grandes)
+# =============================================================================
+data/raw/*.csv
+data/cleaned/*.csv
+data/integrated/*.csv
+*.csv
+*.xlsx
+*.xls
+!data/diccionarios/*.xlsx
+
+# =============================================================================
+# PYTHON
+# =============================================================================
+# Virtual Environment
+.venv/
+venv/
+env/
+ENV/
+*.pyc
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+# Descomentar si no quieres subir outputs de notebooks (recomendado si contienen datos sensibles)
+# *.ipynb
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# =============================================================================
+# POWER BI
+# =============================================================================
+*.pbix
+*.pbit
+~$*.pbix
+dashboards/*.pbix.tmp
+
+# =============================================================================
+# BASE DE DATOS
+# =============================================================================
+*.db
+*.sqlite
+*.sqlite3
+*.sql.bak
+*.log
+
+# =============================================================================
+# IDEs y EDITORES
+# =============================================================================
+# Visual Studio Code
+.vscode/
+*.code-workspace
+.vscode/settings.json
+.vscode/launch.json
+
+# IntelliJ / PyCharm (ya incluido más abajo, pero reforzamos)
+.idea/
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+
+# JetBrains
+.idea/
+*.iml
+out/
+
+# =============================================================================
+# SISTEMA OPERATIVO
+# =============================================================================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.directory
+
+# =============================================================================
+# TEMPORALES Y BACKUPS
+# =============================================================================
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+.~*
+
+# =============================================================================
+# LOGS
+# =============================================================================
+*.log
+logs/
+*.log.*
+
+# =============================================================================
+# DOCUMENTACIÓN TEMPORAL (mantener solo finales)
+# =============================================================================
+docs/archive/
+*_OLD.md
+*_BACKUP.md
+*_temp.md
+
+# =============================================================================
+# ARCHIVOS DE PROCESO (opcional - descomentar si no se quieren en repo)
+# =============================================================================
+# INFORME_*.md
+# RESUMEN_*.md
+# VERIFICACION_*.md
+# MODIFICACIONES_*.md
+# VALIDACION_*.md
+
+# =============================================================================
+# MANTENER EN REPOSITORIO (NO IGNORAR)
+# =============================================================================
+!README.md
+!requirements.txt
+!.gitignore
+!recarga_neondb.py
+!analizar_relaciones.py
+!1_LIMPIEZA_DATOS/scripts/*.py
+!2_ETL_INTEGRATION/**/*.py
+!2_ETL_INTEGRATION/src/load/*.sql
+!docs/METRICAS_KPIS.md
+!docs/GUIA_DASHBOARDS_POWERBI.md
+!docs/ANALISIS_RELACIONES_BD.md
+!data/diccionarios/*.xlsx
+

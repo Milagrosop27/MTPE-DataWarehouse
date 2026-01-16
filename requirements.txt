@@ -1,0 +1,33 @@
+# ==================== CORE DATA PROCESSING ====================
+pandas==2.1.4                # Manipulación y análisis de datos
+numpy==1.26.2                # Operaciones numéricas y arrays
+
+# ==================== DATABASE & ETL ====================
+psycopg2-binary==2.9.9       # Conector PostgreSQL (incluye binarios)
+SQLAlchemy==2.0.23           # ORM y motor de base de datos
+python-dotenv==1.0.0         # Gestión de variables de entorno (.env)
+
+# ==================== DATA VISUALIZATION ====================
+matplotlib==3.8.2            # Gráficos y visualizaciones
+seaborn==0.13.0              # Visualizaciones estadísticas avanzadas
+
+# ==================== JUPYTER NOTEBOOKS ====================
+jupyter==1.0.0               # Ecosistema completo de Jupyter
+ipykernel==6.27.1            # Kernel de Python para Jupyter
+notebook==7.0.6              # Interfaz clásica de Jupyter Notebook
+
+# ==================== EXCEL FILE SUPPORT ====================
+openpyxl==3.1.2              # Lectura/escritura de archivos .xlsx
+xlrd==2.0.1                  # Lectura de archivos .xls (legacy)
+
+# ==================== UTILITIES ====================
+tqdm==4.66.1                 # Barras de progreso para bucles
+python-dateutil==2.8.2       # Utilidades avanzadas de manejo de fechas
+PyYAML==6.0.1                # Lectura y escritura de archivos YAML
+
+# ==================== DEVELOPMENT & TESTING ====================
+pytest==7.4.3                # Framework de testing
+black==23.12.1               # Formateador de código Python
+flake8==6.1.0                # Linter de código Python
+
+
