@@ -1,4 +1,4 @@
-# Data Warehouse MTPE - Mercado Laboral Peruano
+# ETL - Ministerio de Trabajo y Promoción del Empleo                                                                  
 
 [![Python](https://img.shields.io/badge/Python-3.13+-blue.svg)](https://www.python.org/)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15+-336791.svg)](https://www.postgresql.org/)
@@ -46,7 +46,7 @@ MTPE/
 
 ---
 
-##  Pipeline ETL
+##  ETL
 
 ```bash
 # 1. Limpieza
